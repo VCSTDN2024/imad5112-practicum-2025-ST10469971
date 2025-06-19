@@ -71,16 +71,21 @@ I uploaded these build artifacts to GitHub for easy access. The workflow ensures
 Screenshots and app demo 
 
 ![first screen](https://github.com/user-attachments/assets/fa345a59-8bc9-4c8b-8f20-3f322446d390)
-Figure 1
+
+Figure 1- this is the first screen the user sees as they open the app. This screen has an open button which allows for the user to proceed to the next screen which is the MainScreen. This screen also has an exit button which will exit the program 
 
 ![second screen](https://github.com/user-attachments/assets/c1056bf4-3b73-4a0e-9cb4-c9f9160606e7)
-Figure 2
 
+Figure 2- This second screen has various inputs. The user has to input in the title of the song, the name of the artist, give a rating and put a comment
+
+![third screen](https://github.com/user-attachments/assets/c04eedac-5d59-445e-848a-870e33bd208d)
+
+Figure3- this screen is the last screen. The details of the song will be displayed. The average of ratings giving by the user will be calculated. There is an exit button which allows for the user to exit back to the main Screen
 
 
 
  
-hallenge 1: “Connecting a device to Android Studio”  
+Challenge 1: “Connecting a device to Android Studio”  
 
 Solution:” I connected the BlueStacks app to my android device and made sure it was connected on the run for BlueStacks application”   
 
