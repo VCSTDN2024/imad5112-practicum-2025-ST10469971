@@ -55,7 +55,7 @@
         android:id="@+id/student_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ST10469971,Susan Mhango"
+        android:text="ST10469971, Susan Mhango"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

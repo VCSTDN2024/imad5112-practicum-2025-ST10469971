@@ -22,57 +22,39 @@ class DetailedViewScreen : AppCompatActivity() {
         setContentView(R.layout.activity_detailed_view_screen)
 
 
-        songdetailsdisplayListView = findViewById(R.id.song_details_display)
-        exitButton = findViewById(R.id.exit_btn)
+            songname= intent.getStringArrayListExtra("song name") ?: arrayListOf()
+            artistname = intent.getStringArrayListExtra("artist name") ?: arrayListOf()
+            rating = intent.getIntegerArrayListExtra("rating") ?: arrayListOf()
+            comments = intent.getStringArrayListExtra("comments") ?: arrayListOf()
+            songdetails= findViewById(R.id.song_details_display_Textview)
 
-        // Load song data into ListView
-        val weatherEntries = mutableListOf<String>()
-        for (i in WeatherManager.days.indices) {
-            weatherEntries.add("${WeatherManager.days[i]}: Min ${WeatherManager.minTemps[i]}°C, Max ${WeatherManager.maxTemps[i]}°C, Condition: ${WeatherManager.conditions[i]}")
+        //Get the details passed from MainScreenActivity
+        val songname = intent.getStringArrayExtra("song name")
+        val artistname = intent.getBooleanArrayExtra("artist name")
+        val rating = intent.getBooleanArrayExtra("rating")
+        val comments = intent.getBooleanArrayExtra("comments")
+        val songdetails = intent.getBooleanArrayExtra("songdetails")
+
+            val feedback = if (rating >= 1) {
+                "succesfully added"
+            } else {
+
+            "Please ensure that your rating is between 1-5"
         }
+        feedbackTextView.text = feedback
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, weatherEntries)
-        weatherListView.adapter = adapter
-
-        // Navigate back to main screen
-        exitButton.setOnClickListener {
-            finish()
-
+        val calculateAverage = findViewById<Button>(R.id.calculate_average)
+        val averageRating = findViewById<TextView>(R.id.average_rating)
+        val exitButton = findViewById<Button>(R.id.exit_btn)
+        val reviewTextView = findViewById<TextView>(R.id.calculate_average)
 
 
+            // Set click listener for the exit button
+            exitButton.setOnClickListener {
+                finishAffinity()
+                exitProcess(0)
 
-        val reviewTextView = findViewById<TextView>(R.id.review_text_view)
-        val restartBtn = findViewById<Button>(R.id.restart_button)
-        val exitBtn = findViewById<Button>(R.id.exit_btn)
 
-        //Get the questions and answers passed from ScoreActivity
-        val questions = intent.getStringArrayExtra("questions")
-        val answers = intent.getBooleanArrayExtra("answers")
-
-        val reviewText = StringBuilder()
-        if (questions != null && answers != null && questions.size == answers.size) {
-            for (i in questions.indices) {
-                reviewText.append("${i + 1}. ${questions[i]}\n")
-                reviewText.append("  Answer: ${if (answers[i]) "True" else "False"}\n\n")
             }
-            reviewTextView.text = reviewText.toString()
-        } else {
-            reviewTextView.text = "Error, please check "
         }
-
-        // Set click listener for the reset button
-        restartBtn.setOnClickListener {
-            startActivity(Intent(this, MainScreen::class.java))
-        }
-
-        // Set click listener for the exit button
-        exitBtn.setOnClickListener {
-            finishAffinity()
-            exitProcess(0)
-
-
-
-
-
     }
-}

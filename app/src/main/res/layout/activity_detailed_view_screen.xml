@@ -16,12 +16,12 @@
         android:layout_height="wrap_content"
         android:text="Display songs" />
 
-    <ListView
-        android:id="@+id/song_details_display"
+    <TextView
+        android:id="@+id/song_details_display_Textview"
         android:layout_width="372dp"
         android:layout_height="349dp"
         android:layout_margin="16dp"
-        android:text="Song Deatils"
+        android:text="Song Details"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
