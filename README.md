@@ -114,4 +114,9 @@ These enhancements would improve the app’s usability and make it even more ver
 
  
 
-9. References   
+9. References
+The Independent Institute of Education, 2025. Introduction to mobile application development [IMAD5112]. nt. [online via internal VLE] The Independent Institute of Education. Available at: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7BA1FF62F0-8E1A-47BC-99BD-CA07AE24427D%7D&file=IMAD5112_MM.docx&action=default&mobileredirect=true [Accessed Date 19 June 2025]  
+
+
+
+GmbH, G.C. (no date) Base64 image encoder. Available at: https://www.base64-image.de/ (Accessed: 19 June 2025). 
