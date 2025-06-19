@@ -80,3 +80,38 @@ Figure 2
 
 
  
+hallenge 1: “Connecting a device to Android Studio”  
+
+Solution:” I connected the BlueStacks app to my android device and made sure it was connected on the run for BlueStacks application”   
+
+Challenge 2: “Pushing my work from Android Studio to GitHub”  
+
+ 
+
+Solution: “I used the Command Prompt and executed the commands that managed to push my work to GitHub”  
+
+ 
+
+From these challenges, I learned important lessons in debugging, using version control, and automating build processes with GitHub Actions  
+
+ 
+
+8.  Future Enhancements   
+
+ While the current version of the app provides the core functionality, there are several features that could be added in the future, including:  
+
+ 
+
+Feature 1: "Current date and time shown at the top”  
+
+Feature 2: “Adding a different picture in the background to attract the user 
+
+Feature 3: “adding more questions to the app”  
+
+These enhancements would improve the app’s usability and make it even more versatile for end-users.  
+
+ 
+
+ 
+
+9. References   
