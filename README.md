@@ -70,4 +70,13 @@ I uploaded these build artifacts to GitHub for easy access. The workflow ensures
 
 Screenshots and app demo 
 
+![first screen](https://github.com/user-attachments/assets/fa345a59-8bc9-4c8b-8f20-3f322446d390)
+Figure 1
+
+![second screen](https://github.com/user-attachments/assets/c1056bf4-3b73-4a0e-9cb4-c9f9160606e7)
+Figure 2
+
+
+
+
  
